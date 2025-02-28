@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', 
   images: {
+    unoptimized: true, 
     remotePatterns: [
       {
         protocol: 'https',
@@ -8,10 +10,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com', // ✅ Allow Cloudinary images
+        hostname: 'res.cloudinary.com',
       },
     ],
   },
+  basePath: '/your-repo-name', 
+  assetPrefix: '/your-repo-name', 
 };
 
 export default nextConfig;
