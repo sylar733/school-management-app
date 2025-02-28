@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Event" ADD COLUMN "date" TIMESTAMP NOT NULL DEFAULT NOW();
