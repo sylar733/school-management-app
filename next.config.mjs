@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', 
+  output: 'export',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -14,8 +14,8 @@ const nextConfig = {
       },
     ],
   },
-  basePath: '/your-repo-name', 
-  assetPrefix: '/your-repo-name', 
+  basePath: '/school-management-app',
+  assetPrefix: '/school-management-app/',
 };
 
 export default nextConfig;
